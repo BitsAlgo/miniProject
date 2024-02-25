@@ -1,0 +1,62 @@
+@import "https://fonts.googleapis.com/css?family=Lily+Script+One";
+
+body {
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(https://img.freepik.com/free-vector/gradient-valentine-s-day-background_23-2149242406.jpg?t=st=1708873003~exp=1708876603~hmac=e9837fc133490181ced520347f8b34547e28869255137071efcb4ddb6dd85395&w=740);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 560px;
+  height: 290px;
+  border-radius: 20px;
+  background-color: #f5f5dc43;
+  padding: 15px;
+  text-align: left;
+  perspective: 400px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+p {
+  position: absolute;
+  font-family: cursive;
+  white-space: nowrap;
+  font-size: 2em;
+  color: #ff0202;
+  text-shadow: 0px 1px 5px #f5deb3;
+  font-weight: 700;
+}
+
+.panel {
+  position: absolute;
+  width: 180px;
+  height: 50px;
+  background: white;
+  transition: transform 1s;
+  transform-origin: 0% 50%;
+  cursor: help;
+  border-radius: 5px;
+  margin-top: 30px;
+  box-shadow: 0 0 5px rgb(228, 16, 122);
+}
+
+.spoiler-text {
+  position: absolute;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: red;
+  padding-top: 30px;
+}
+
+.panel:active,
+.panel:focus {
+  transform: rotateY(-90deg);
+}
